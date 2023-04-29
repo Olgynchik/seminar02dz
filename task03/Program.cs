@@ -3,15 +3,15 @@
 System.Console.WriteLine("Введите число от 1 до 7: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-if (num <= 7)
+if (num >= 1 && num <=  5)
 {
-     if(num <= 5)
-   {
-    System.Console.WriteLine("будни");
-   }
+    System.Console.WriteLine("Рабочий день");
+}
+else if (num == 6 || num == 7)
+{
     System.Console.WriteLine("Выходной");
 }
-else if (num > 7)
+else
 {
-    System.Console.WriteLine("error");
+    System.Console.WriteLine("Нет такой недели");
 }
