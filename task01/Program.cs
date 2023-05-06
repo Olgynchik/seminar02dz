@@ -1,12 +1,26 @@
-﻿
-Console.WriteLine("Введите пятизначное число: ");
-string? num = Console.ReadLine();
-if (num[0] == num[4] || num[1] == num[3])
+﻿// напишите программу, которая принимает на вход пятизначное число
+// и проверяет является ли оно палиндромом (зеркальным)
+//что бы проверить палиндромное ли число можно преобразовать его в строку
+
+System.Console.Write("Введите пятизначное число: ");
+string? str = Console.ReadLine();
+if(str.Length == 5)
 {
-    Console.WriteLine($"Yes");
+    if(str[0]==str[4] && str[1]== str [3])
+    {
+        System.Console.WriteLine("yes");
+    }
+    else 
+    {
+        System.Console.WriteLine("no");
+    }
+}
+else
+{
+    System.Console.WriteLine("Введите пятизначное число!");
 }
 
-else 
-{
-    Console.WriteLine($"No");
-}
+
+
+
+
